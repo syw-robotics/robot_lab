@@ -3,9 +3,9 @@
 
 import math
 
-from omni.isaac.lab.managers import RewardTermCfg as RewTerm
-from omni.isaac.lab.managers import SceneEntityCfg
-from omni.isaac.lab.utils import configclass
+from isaaclab.managers import RewardTermCfg as RewTerm
+from isaaclab.managers import SceneEntityCfg
+from isaaclab.utils import configclass
 
 from robot_lab.tasks.locomotion.velocity.config.unitree_a1_handstand.env import rewards
 from robot_lab.tasks.locomotion.velocity.velocity_env_cfg import LocomotionVelocityRoughEnvCfg, RewardsCfg
@@ -14,7 +14,7 @@ from robot_lab.tasks.locomotion.velocity.velocity_env_cfg import LocomotionVeloc
 # Pre-defined configs
 ##
 # use cloud assets
-from omni.isaac.lab_assets.unitree import UNITREE_A1_CFG  # isort: skip
+from isaaclab_assets.robots.unitree import UNITREE_A1_CFG  # isort: skip
 
 # use local assets
 # from robot_lab.assets.unitree import UNITREE_A1_CFG  # isort: skip

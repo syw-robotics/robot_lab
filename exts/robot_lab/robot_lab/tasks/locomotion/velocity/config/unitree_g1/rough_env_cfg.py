@@ -1,11 +1,11 @@
 # Copyright (c) 2024-2025 Ziqi Fan
 # SPDX-License-Identifier: Apache-2.0
 
-import omni.isaac.lab_tasks.manager_based.locomotion.velocity.mdp as mdp
-from omni.isaac.lab.managers import RewardTermCfg as RewTerm
-from omni.isaac.lab.managers import SceneEntityCfg
-from omni.isaac.lab.utils import configclass
-from omni.isaac.lab_tasks.manager_based.locomotion.velocity.velocity_env_cfg import (
+import isaaclab_tasks.manager_based.locomotion.velocity.mdp as mdp
+from isaaclab.managers import RewardTermCfg as RewTerm
+from isaaclab.managers import SceneEntityCfg
+from isaaclab.utils import configclass
+from isaaclab_tasks.manager_based.locomotion.velocity.velocity_env_cfg import (
     LocomotionVelocityRoughEnvCfg,
     RewardsCfg,
 )
@@ -13,7 +13,7 @@ from omni.isaac.lab_tasks.manager_based.locomotion.velocity.velocity_env_cfg imp
 ##
 # Pre-defined configs
 ##
-from omni.isaac.lab_assets import G1_MINIMAL_CFG  # isort: skip
+from isaaclab_assets import G1_MINIMAL_CFG  # isort: skip
 
 
 @configclass

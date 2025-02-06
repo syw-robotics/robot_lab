@@ -1,7 +1,7 @@
 # robot_lab
 
-[![IsaacSim](https://img.shields.io/badge/IsaacSim-4.2.0-silver.svg)](https://docs.omniverse.nvidia.com/isaacsim/latest/overview.html)
-[![Isaac Lab](https://img.shields.io/badge/IsaacLab-1.2.0-silver)](https://isaac-sim.github.io/IsaacLab)
+[![IsaacSim](https://img.shields.io/badge/IsaacSim-4.5.0-silver.svg)](https://docs.omniverse.nvidia.com/isaacsim/latest/overview.html)
+[![Isaac Lab](https://img.shields.io/badge/IsaacLab-2.0.0-silver)](https://isaac-sim.github.io/IsaacLab)
 [![Python](https://img.shields.io/badge/python-3.10-blue.svg)](https://docs.python.org/3/whatsnew/3.10.html)
 [![Linux platform](https://img.shields.io/badge/platform-linux--64-orange.svg)](https://releases.ubuntu.com/20.04/)
 [![Windows platform](https://img.shields.io/badge/platform-windows--64-orange.svg)](https://www.microsoft.com/en-us/)
@@ -23,7 +23,7 @@ If you want to run policy in gazebo or real robot, please use [rl_sar](https://g
 - Clone the repository separately from the Isaac Lab installation (i.e. outside the `IsaacLab` directory):
 
   ```bash
-  git clone https://github.com/fan-ziqi/robot_lab.git
+  git clone https://github.com/syw-robotics/robot_lab.git
   ```
 
 - Using a python interpreter that has Isaac Lab installed, install the library
@@ -290,7 +290,7 @@ The environments are then registered in the `exts/robot_lab/tasks/locomotion/vel
 ```python
 gym.register(
     id="RobotLab-Isaac-Velocity-Flat-Unitree-A1-v0",
-    entry_point="omni.isaac.lab.envs:ManagerBasedRLEnv",
+    entry_point="isaaclab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
         "env_cfg_entry_point": f"{__name__}.flat_env_cfg:UnitreeA1FlatEnvCfg",
@@ -300,7 +300,7 @@ gym.register(
 
 gym.register(
     id="RobotLab-Isaac-Velocity-Rough-Unitree-A1-v0",
-    entry_point="omni.isaac.lab.envs:ManagerBasedRLEnv",
+    entry_point="isaaclab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
         "env_cfg_entry_point": f"{__name__}.rough_env_cfg:UnitreeA1RoughEnvCfg",

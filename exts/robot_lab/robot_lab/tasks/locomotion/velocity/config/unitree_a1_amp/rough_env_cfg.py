@@ -3,10 +3,10 @@
 
 import glob
 
-from omni.isaac.lab.managers import EventTermCfg as EventTerm
-from omni.isaac.lab.managers import ObservationGroupCfg as ObsGroup
-from omni.isaac.lab.managers import ObservationTermCfg as ObsTerm
-from omni.isaac.lab.utils import configclass
+from isaaclab.managers import EventTermCfg as EventTerm
+from isaaclab.managers import ObservationGroupCfg as ObsGroup
+from isaaclab.managers import ObservationTermCfg as ObsTerm
+from isaaclab.utils import configclass
 
 import robot_lab.tasks.locomotion.velocity.mdp as mdp
 from robot_lab.tasks.locomotion.velocity.config.unitree_a1_amp.env.events import reset_amp
@@ -17,7 +17,7 @@ from robot_lab.third_party.amp_utils import AMP_UTILS_DIR
 # Pre-defined configs
 ##
 # use cloud assets
-# from omni.isaac.lab_assets.unitree import UNITREE_A1_CFG  # isort: skip
+# from isaaclab_assets.robots.unitree import UNITREE_A1_CFG  # isort: skip
 # use local assets
 from robot_lab.assets.unitree import UNITREE_A1_CFG  # isort: skip
 

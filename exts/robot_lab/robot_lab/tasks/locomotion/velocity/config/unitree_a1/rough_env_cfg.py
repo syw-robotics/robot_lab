@@ -1,7 +1,7 @@
 # Copyright (c) 2024-2025 Ziqi Fan
 # SPDX-License-Identifier: Apache-2.0
 
-from omni.isaac.lab.utils import configclass
+from isaaclab.utils import configclass
 
 from robot_lab.tasks.locomotion.velocity.velocity_env_cfg import LocomotionVelocityRoughEnvCfg
 
@@ -9,7 +9,7 @@ from robot_lab.tasks.locomotion.velocity.velocity_env_cfg import LocomotionVeloc
 # Pre-defined configs
 ##
 # use cloud assets
-# from omni.isaac.lab_assets.unitree import UNITREE_A1_CFG  # isort: skip
+# from isaaclab_assets.unitree import UNITREE_A1_CFG  # isort: skip
 # use local assets
 from robot_lab.assets.unitree import UNITREE_A1_CFG  # isort: skip
 

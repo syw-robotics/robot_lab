@@ -1,5 +1,5 @@
 import argparse
-from omni.isaac.lab.app import AppLauncher
+from isaaclab.app import AppLauncher
 # add argparse arguments
 parser = argparse.ArgumentParser()
 # append AppLauncher cli args

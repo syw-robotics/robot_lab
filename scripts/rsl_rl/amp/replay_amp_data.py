@@ -7,7 +7,7 @@
 
 import argparse
 
-from omni.isaac.lab.app import AppLauncher
+from isaaclab.app import AppLauncher
 
 # local imports
 import cli_args  # isort: skip
@@ -35,9 +35,9 @@ import gymnasium as gym
 import numpy as np
 import torch
 
-from omni.isaac.lab.utils.math import quat_rotate
-from omni.isaac.lab_tasks.utils import parse_env_cfg
-from omni.isaac.lab_tasks.utils.wrappers.rsl_rl import RslRlVecEnvWrapper
+from isaaclab.utils.math import quat_rotate
+from isaaclab_tasks.utils import parse_env_cfg
+from isaaclab_tasks.utils.wrappers.rsl_rl import RslRlVecEnvWrapper
 
 # Import extensions to set up environment tasks
 import robot_lab.tasks  # noqa: F401

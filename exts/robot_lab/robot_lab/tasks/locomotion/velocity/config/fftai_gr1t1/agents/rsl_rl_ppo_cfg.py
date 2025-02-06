@@ -1,8 +1,8 @@
 # Copyright (c) 2024-2025 Ziqi Fan
 # SPDX-License-Identifier: Apache-2.0
 
-from omni.isaac.lab.utils import configclass
-from omni.isaac.lab_tasks.utils.wrappers.rsl_rl import (
+from isaaclab.utils import configclass
+from isaaclab_rl.rsl_rl import (
     RslRlOnPolicyRunnerCfg,
     RslRlPpoActorCriticCfg,
     RslRlPpoAlgorithmCfg,

@@ -12,9 +12,9 @@ from __future__ import annotations
 import gymnasium as gym
 import torch
 
-from omni.isaac.lab.envs.common import VecEnvStepReturn
-from omni.isaac.lab.envs.manager_based_rl_env import ManagerBasedRLEnv
-from omni.isaac.lab.envs.manager_based_rl_env_cfg import ManagerBasedRLEnvCfg
+from isaaclab.envs.common import VecEnvStepReturn
+from isaaclab.envs.manager_based_rl_env import ManagerBasedRLEnv
+from isaaclab.envs.manager_based_rl_env_cfg import ManagerBasedRLEnvCfg
 
 from robot_lab.third_party.amp_utils.kinematics import urdf
 from robot_lab.third_party.rsl_rl_amp.datasets.motion_loader import AMPLoader

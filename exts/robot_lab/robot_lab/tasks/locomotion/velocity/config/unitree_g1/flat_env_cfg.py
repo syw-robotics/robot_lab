@@ -1,8 +1,8 @@
 # Copyright (c) 2024-2025 Ziqi Fan
 # SPDX-License-Identifier: Apache-2.0
 
-from omni.isaac.lab.managers import SceneEntityCfg
-from omni.isaac.lab.utils import configclass
+from isaaclab.managers import SceneEntityCfg
+from isaaclab.utils import configclass
 
 from .rough_env_cfg import UnitreeG1RoughEnvCfg
 
